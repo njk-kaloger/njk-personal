@@ -3,12 +3,14 @@ import Navigation from "./Navigation";
 import ContactCard from "./ContactCard";
 import ImageCard from "./ImageCard";
 import Footer from "./Footer";
+import Login from "./Login";
 
 class Contact extends Component {
   render() {
     return (
       <div>
         <h1 id="title">Contact Page</h1>
+        <Login />
         <Navigation />
         <br />
         <br />
