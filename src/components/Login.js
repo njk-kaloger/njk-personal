@@ -31,10 +31,14 @@ class Login extends Component {
 
           <form className="modal-content animate" action="/action_page.php">
             <div className="imgcontainer">
-              <img src="img_avatar2.png" alt="Avatar" className="avatar" />
+              <img
+                src="images/img_avatar.png"
+                alt="Avatar"
+                className="avatar"
+              />
             </div>
 
-            <div className="container">
+            <div className="holder">
               <label htmlFor="uname">
                 <b>Username</b>
               </label>
