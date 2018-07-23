@@ -1,2 +1,0 @@
-# njk-web
-Personal Website
