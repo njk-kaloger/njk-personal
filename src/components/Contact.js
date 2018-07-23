@@ -25,7 +25,7 @@ class Contact extends Component {
             number="0422-127-623"
           />
           <ContactCard
-            type="Work"
+            type="Inlight"
             email="nicholas.kaloger@inlight.com"
             number="0422-127-623"
           />

@@ -5,6 +5,10 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+/**********************************************************************
+Headings/Text CSS
+**********************************************************************/
+
 #title {
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
@@ -23,6 +27,11 @@ body {
   color: red;
   text-align: center;
 }
+
+/**********************************************************************
+Contact CSS
+**********************************************************************/
+
 .contact-card-point {
   padding-left: 20px;
   list-style: none;
@@ -88,6 +97,44 @@ li {
   width: 33%;
   margin: 10px;
   text-align: center;
+}
+
+.card-details:hover {
+  border: 12px solid;
+  border-color: #8cbaff;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 97%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
 }
 
 /**********************************************************************
@@ -308,8 +355,6 @@ Footer CSS
   margin-right: 3px;
   margin-bottom: 5px;
 }
-
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
   .footer-distributed {
