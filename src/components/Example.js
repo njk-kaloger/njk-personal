@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
 import { Fade } from "react-slideshow-image";
+import Footer from "./Footer";
 
 const images = ["images/mussels.jpg"];
 const Slideshow = () => {
@@ -14,6 +15,7 @@ class Example extends Component {
       <div>
         <h1 id="title">Example Page</h1>
         <Navigation />
+        <Footer />
       </div>
     );
   }

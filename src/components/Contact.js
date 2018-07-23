@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navigation from "./Navigation";
 import ContactCard from "./ContactCard";
 import ImageCard from "./ImageCard";
+import Footer from "./Footer";
 
 class Contact extends Component {
   render() {
@@ -33,6 +34,7 @@ class Contact extends Component {
         <div className="second-container">
           <ImageCard name="Nicholas Kaloger" image="images/profile.jpg" />
         </div>
+        <Footer />
       </div>
     );
   }
