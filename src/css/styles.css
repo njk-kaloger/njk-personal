@@ -12,6 +12,13 @@ body {
   font-size: 50px;
 }
 
+#subtitle {
+  text-align: center;
+  font-family: cursive;
+  color: #8cbaff;
+  font-size: 40px;
+}
+
 #error {
   color: red;
   text-align: center;
@@ -44,6 +51,25 @@ body {
 }
 
 .second-container > div {
+  background: #f1f1f1;
+  width: 33%;
+  margin: 10px;
+  text-align: center;
+}
+
+.third-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  float: right;
+}
+
+.third-container > div > img {
+  border: 6px solid;
+  border-color: #8cbaff;
+}
+
+.third-container > div {
   background: #f1f1f1;
   width: 33%;
   margin: 10px;
