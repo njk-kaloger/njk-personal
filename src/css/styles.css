@@ -23,6 +23,20 @@ body {
   color: red;
   text-align: center;
 }
+.contact-card-point {
+  padding-left: 20px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+.contact-card-point > li:before {
+  font-family: "FontAwesome";
+  content: "\f2bb";
+  margin: 0 5px 0 -15px;
+}
 
 .flex-container {
   display: flex;

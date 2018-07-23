@@ -5,7 +5,7 @@ class ContactCard extends Component {
     return (
       <div>
         <h2>{this.props.type}</h2>
-        <ul>
+        <ul className="contact-card-point">
           <li>
             <em>email: </em> {this.props.email}
           </li>
