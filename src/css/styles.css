@@ -375,6 +375,15 @@ Footer CSS
   }
 }
 
+/**********************************************************************
+Login CSS
+**********************************************************************/
+.login {
+  width: 100px;
+  text-align: center;
+  float: right;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -388,10 +397,26 @@ Footer CSS
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   padding-top: 60px;
+  padding-left: 30%;
 }
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
 .close {
-  font-size: 50px;
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
 }
 .close:hover,
 .close:focus {
@@ -451,6 +476,30 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 /* Change styles for span and cancel button on extra small screens */
