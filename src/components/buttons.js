@@ -5,7 +5,8 @@ export default function Buttons(props) {
 
   return (
     <div className="buttons">
-      <button onClick={props.handleClick}>{label}</button>
+      <button onClick={props.startTimer}>{label}</button>
+      <button onClick={props.stopTimer}>Reset</button>
     </div>
   );
 }

@@ -10,6 +10,7 @@ class Timer extends React.Component {
       nonce: 0
     };
     this.addTimerEvent = this.addTimerEvent.bind(this);
+    this.removeTimerEvent = this.removeTimerEvent.bind(this);
     this.tick = this.tick.bind(this);
     this.poll = setInterval(this.tick, 1000);
   }
@@ -24,12 +25,19 @@ class Timer extends React.Component {
     });
   }
 
+  removeTimerEvent() {
+    this.setState({
+      timingEvents: []
+    });
+  }
+
   render() {
     return (
       <div className="container">
         <ElapsedTime timingEvents={this.state.timingEvents} />
         <Buttons
-          handleClick={this.addTimerEvent}
+          startTimer={this.addTimerEvent}
+          stopTimer={this.removeTimerEvent}
           timingEvents={this.state.timingEvents}
         />
       </div>
