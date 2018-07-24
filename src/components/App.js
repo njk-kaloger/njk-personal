@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import Login from "./Login";
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div>
         <h1 id="title">NJK-Web</h1>
         <div>
+          <Login />
           <Navigation />
           <Footer />
         </div>
