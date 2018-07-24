@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer-distributed">
+      <div className="footer-distributed">
         <div className="footer-left">
           <h3>
             N<span>JK</span>
@@ -64,7 +64,7 @@ class Footer extends Component {
             </a>
           </div>
         </div>
-      </footer>
+      </div>
     );
   }
 }

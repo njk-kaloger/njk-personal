@@ -1,32 +1,46 @@
 import React, { Component } from "react";
 
 class Login extends Component {
-  divRef = React.createRef();
+  constructor(props) {
+    super(props);
+    this.state = {
+      isVisible: false
+    };
+    this.style = { display: "none" };
+  }
   clickForm = event => {
-    const modal = this.divRef;
-
     // When the user clicks anywhere outside of the modal, close it
     if (event.target.className === "login") {
-      modal.current.style.display = "block";
+      this.setState({
+        isVisible: true
+      });
     }
 
-    if (event.target.className === "close") {
-      modal.current.style.display = "none";
-    }
-
-    if (event.target.className === "cancelbtn") {
-      modal.current.style.display = "none";
+    if (
+      event.target.className === "close" ||
+      event.target.className === "cancelbtn"
+    ) {
+      this.setState({
+        isVisible: false
+      });
     }
   };
 
   render() {
+    if (this.state.isVisible === true) {
+      this.style = { display: "block" };
+    }
+
+    if (this.state.isVisible === false) {
+      this.style = { display: "none" };
+    }
     return (
       <div>
         <button className="login" onClick={this.clickForm}>
           Login
         </button>
 
-        <div ref={this.divRef} id="id01" className="modal">
+        <div style={this.style} id="id01" className="modal">
           <span onClick={this.clickForm} className="close" title="Close Modal">
             &times;
           </span>
