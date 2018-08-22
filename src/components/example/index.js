@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
-import Login from "./Login";
-import Timer from "./timer";
-import Game from "./tic-tac";
+import Navigation from "../navigation";
+import Footer from "../footer";
+import Login from "../login";
+import Timer from "../timer";
+import Game from "../tic-tac";
 
 class Example extends Component {
   render() {

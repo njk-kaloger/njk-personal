@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import App from "./App";
-import NotFound from "./NotFound";
-import About from "./About";
-import Contact from "./Contact";
-import Example from "./Example";
+
+import App from "../app";
+import NotFound from "../not-found";
+import About from "../about";
+import Contact from "../contact";
+import Example from "../example";
 
 const Router = () => (
   <BrowserRouter>

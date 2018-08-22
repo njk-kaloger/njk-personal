@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
-import ContactCard from "./ContactCard";
-import ImageCard from "./ImageCard";
-import Footer from "./Footer";
-import Login from "./Login";
+import Navigation from "../navigation";
+import ContactCard from "../contact-card";
+import ImageCard from "../image-card";
+import Footer from "../footer";
+import Login from "../login";
 
 class Contact extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React from "react";
-import ElapsedTime from "./elapsed";
-import Buttons from "./buttons";
+import ElapsedTime from "../elapsed";
+import Buttons from "../button";
 
 class Timer extends React.Component {
   constructor(props) {

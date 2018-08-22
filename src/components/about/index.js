@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
-import ImageCard from "./ImageCard";
-import Login from "./Login";
+import Navigation from "../navigation";
+import Footer from "../footer";
+import ImageCard from "../image-card";
+import Login from "../login";
 
 class About extends Component {
   render() {
