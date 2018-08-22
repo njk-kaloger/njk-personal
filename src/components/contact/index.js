@@ -35,7 +35,10 @@ class Contact extends Component {
           </div>
 
           <div className="second-container">
-            <ImageCard name="Nicholas Kaloger" image="images/profile.jpg" />
+            <ImageCard
+              name="Nicholas Kaloger"
+              image="assets/images/profile.jpg"
+            />
           </div>
         </div>
         <Footer />

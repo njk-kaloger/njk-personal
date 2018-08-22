@@ -13,7 +13,10 @@ class About extends Component {
         <Navigation />
         <h2 id="subtitle">About Me</h2>
         <div className="third-container">
-          <ImageCard name="Nicholas Kaloger" image="images/profile.jpg" />
+          <ImageCard
+            name="Nicholas Kaloger"
+            image="assets/images/profile.jpg"
+          />
         </div>
         <Footer />
       </div>
