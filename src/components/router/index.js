@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import App from "../app";
+import App from '../App';
 import NotFound from "../not-found";
 import About from "../about";
 import Contact from "../contact";
