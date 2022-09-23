@@ -1,0 +1,23 @@
+{
+  "name": "njk-content-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "apollo-server": "^3.10.2",
+    "graphql": "^16.6.0"
+  }
+}
